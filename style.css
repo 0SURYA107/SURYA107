@@ -1,0 +1,509 @@
+*{
+	margin:0px;
+	padding:0px;
+	margin:auto;
+}
+@font-face{
+	font-family:GillSansMT;
+	src:url(Font/GillSansMT.TTF);
+}
+@font-face{
+	font-family:Aaleyah;
+	src:url(Font/Aaleyah.otf);
+}
+@keyframes rise
+{
+	
+	from{top:600px;color:transparent;border-color:transparent;}
+	to{top:500px;}
+}
+@keyframes color
+{
+	from{background-color:rgb(122,157,163);}
+	to{}
+}
+@keyframes zoom-out
+{
+	from{background-size:500px 700px;}
+	to{background-size:100% 600;}
+}
+@keyframes zoom-out2
+{
+	from{background-size:660px 830px;}
+	to{}
+}
+#video{
+	position:fixed;
+	width:100%;
+	z-index:-1;
+}
+main{
+	width:100%;
+	height:auto;
+}
+header
+{
+	width:100%;
+	height:40px;
+	background-color:#7A9DA3;
+}
+header p{
+	font-size:8px;
+	text-align:center;
+	color:white;
+	font-family:GillSansMT;
+	letter-spacing:4px;
+	padding:15px 0px 0px 0px;
+}
+nav{
+	width:100%;
+	height:75px;
+	background-color:#FFFFFF;
+}
+nav ol li{
+	width:50px;
+	display:inline-block;
+	margin:25px 0px 10px 40px;
+	font-family:GillSansMT;
+	font-size:18px;
+	letter-spacing:5px;
+}
+#men{
+	margin:25px 20px 10px 40px;
+	float:left;
+}
+#women{
+	margin:25px 20px 10px 20px;
+	float:left;
+}
+#men:hover{
+	font-size:23px;
+	cursor:pointer;
+	margin:22.5px 25px 7.5px 35px;
+}
+#women:hover{
+	font-size:23px;
+	cursor:pointer;
+	margin:22.5px 22.5px 7.5px 10px;
+}
+
+
+
+#men_section{
+	z-index:1;
+	display:none;
+	position:absolute;
+	width:100%;
+	height:570px;
+	top:88px;
+}
+#men_top{
+	width:100%;
+	height:27px;
+	border:black;
+	background-color:transparent;
+}
+#men_bottom{
+	width:100%;
+	height:auto;
+	float:left;
+}
+#men_left{
+	width:25%;
+	height:547px;
+	float:left;
+	background-color:#7A9DA3;
+}
+#men_left ul{
+	margin:50px 0px 0px 10px;
+}
+#men_left ul li{
+	width:200px;
+	display:block;
+	color:white;
+}
+#men_right{
+	background-color:#7A9DA3;
+	width:75%;
+	height:547px;
+	float:left;
+}
+#men_right_image{
+	width:400px;
+	height:525px;
+	margin:20px 20px 0px 0px;
+	float:right;
+	background-image:url(images/men.jpg);
+	background-size:100% 600px;
+	background-repeat:no-repeat;
+	background-position:center;
+	animation:zoom-out 2s 1;
+}
+#men_span:hover #men_section{
+	display:block;
+}
+#men_span:hover #men{
+	font-size:23px;
+	margin:22.5px 25px 7.5px 35px;
+}
+#men_left ul li:hover{
+	cursor:pointer;
+}
+
+#women_section{
+	z-index:1;
+	display:none;
+	position:absolute;
+	width:100%;
+	height:570px;
+	top:88px;
+}
+#women_top{
+	width:100%;
+	height:27px;
+	border:black;
+	background-color:transparent;
+}
+#women_bottom{
+	width:100%;
+	height:auto;
+	float:left;
+}
+#women_left{
+	width:25%;
+	height:547px;
+	float:left;
+	background-color:#7A9DA3;
+}
+#women_left ul{
+	margin:50px 0px 0px 10px;
+}
+#women_left ul li{
+	width:200px;
+	display:block;
+	color:white;
+}
+#women_right{
+	background-color:#7A9DA3;
+	width:75%;
+	height:547px;
+	float:left;
+}
+#women_right_image{
+	width:400px;
+	height:525px;
+	margin:20px 20px 0px 0px;
+	float:right;
+	background-image:url(images/women.jpg);
+	background-size:100% 600px;
+	background-repeat:no-repeat;
+	background-position:center;
+	animation:zoom-out 2s 1;
+}
+#women_span:hover #women_section{
+	display:block;
+}
+#women_span:hover #women{
+	font-size:23px;
+	margin:22.5px 22.5px 7.5px 10px;
+}
+#women_left ul li:hover{
+	cursor:pointer;
+}
+
+
+nav #logo{
+	width:250px;
+	height:auto;
+	position:absolute;
+	left:520px;
+	right:530px;
+}
+#profile,#search,#cart{
+	float:right;
+	width:30px;
+	margin:20px 10px 0px 10px;
+}
+#cart{
+	margin:20px 60px 0px 10px;
+}
+#profile:hover{
+	width:40px;
+	margin:15px 5px 0px 5px;
+	cursor:pointer;
+}
+#search:hover{
+	cursor:pointer;
+}
+#cart:hover{
+	width:40px;
+	margin:15px 55px 0px 5px;
+	cursor:pointer;
+}
+#search_section{
+	display:none;
+	position:absolute;
+	width:100%;
+	height:125px;
+	background-color:white;
+	top:92px;
+}
+#search-2{
+	width:35px;
+	margin:50px 10px 0px 40px;
+	float:left;
+}
+span input{
+	width:300px;
+	height:40px;
+	margin:45px 0px 0px 0px;
+	border:none;
+	color:black;
+	font-family:GillSansMT;
+	letter-spacing:5px;
+	font-size:20px;
+	outline:none;
+	text-transform:uppercase;
+}
+input::placeholder{
+	font-family:GillSansMT;
+	letter-spacing:5px;
+	font-size:22px;
+}
+#search_span:hover #search_section{
+	display:block;
+}
+#search_span:hover #search{
+	width:40px;
+	margin:15px 5px 0px 5px;
+}
+#section-1{
+	width:100%;
+	height:545px;
+	background-color:rgba(0,0,255,0.2);
+	animation:color 5s 1;
+}
+#section-1 p{
+	font-family:GillSansMT;
+	color:white;
+	font-size:15px;
+	text-align:center;
+	color:white;
+	letter-spacing:5px;
+	position:absolute;
+    left:500px;
+	top:500px;
+	right:450px;
+	animation:rise 3s 1;
+	padding:15px 60px 15px 60px;
+	border:1px solid white;
+}
+#section-1 p:hover{
+	cursor:pointer;
+	background-color:white;
+	color:black;
+}
+#section-2{
+	width:100%;
+	height:auto;
+	background-color:#FFFFFF;
+}
+#section-2 #center div{
+	display:inline-block;
+	background-color:rgba(0,0,0,0.5);	
+	width:380px;
+	height:550px;
+}
+#section-2 #center div #img11{
+	background-image:url(images/coats.jpg);
+	background-size:380px 550px;
+	opacity:0.5;
+	background-position:center;
+	animation:zoom-out2 30s 1;
+}
+#section-2 #center div #img22{
+	background-image:url(images/shirts.jpg);
+	background-size:380px 550px;
+	opacity:0.5;
+	background-position:center;
+	animation:zoom-out2 30s 1;
+}
+#section-2 #center div #img33{
+	background-image:url(images/t-shirts.jpg);
+	background-size:380px 550px;
+	opacity:0.5;
+	background-position:center;
+	animation:zoom-out2 30s 1;
+}
+#section-2 #center div #img44{
+	background-image:url(images/vacation.jpg);
+	background-size:380px 550px;
+	opacity:0.5;
+	background-position:center;
+	animation:zoom-out2 30s 1;
+}
+#section-2 #center div #img55{
+	background-image:url(images/shorts.jpg);
+	background-size:380px 550px;
+	opacity:0.5;
+	background-position:center;
+	animation:zoom-out2 30s 1;
+}
+#section-2 #center div #img66{
+	background-image:url(images/hoodies.jpg);
+	background-size:380px 550px;
+	opacity:0.5;
+	background-position:center;
+	animation:zoom-out2 30s 1;
+}
+#section-2 #center div p{
+	font-family:GillSansMT;
+	color:white;
+	position:absolute;
+	font-size:50px;
+	letter-spacing:5px;
+	z-index:1;
+}
+#section-2 #center #img1 p{
+	margin:200px 0px 0px 90px;
+}
+#section-2 #center #img2 p{
+	margin:200px 0px 0px 90px;
+}
+#section-2 #center #img3 p{
+	margin:200px 0px 0px 90px;
+}
+#section-2 #center #img4 p{
+	margin:200px 0px 0px 60px;
+}
+#section-2 #center #img5 p{
+	margin:200px 0px 0px 90px;
+} 
+#section-2 #center #img6 p{
+	margin:200px 0px 0px 90px;
+} 
+
+
+
+#section-2 #center{
+	padding:100px 10px 10px 100px;
+}
+#section-2 #center #heading{
+	font-family:GillSansMT;
+	font-size:25px;
+	letter-spacing:5px;
+	margin:0px 0px 30px 0px;
+}
+#section-3{
+	width:100%;
+	height:auto;
+	background-color:#FFFFFF;
+	font-family:GillSansMT;
+}
+#section-3 #center2{
+	padding:50px;
+	font-size:25px;
+	letter-spacing:5px;
+}
+#b{
+	padding:0px 0px 30px 50px;
+}
+#a1 div{
+	height:auto;
+	width:300px;
+	float:left;
+}
+#a1 img{
+	width:300px;
+	height:350px;
+}
+#a4 img{
+	padding:40px 0px 0px 0px;
+}
+#section-4{
+	width:100%;
+	height:autopx;
+	background-color:#FFFFFF;
+}
+#section-4 #center3{
+	border:1px solid white;
+}
+#section-4 #center3 img{
+	display:inline-block;
+	width:266px;
+	height:400px;
+}
+
+#section-5{
+	width:100%;
+	height:400px;
+	background-color:#FFFFFF;
+	font-family:GillSansMT;
+	letter-spacing:3px;
+	list-style-type:none;
+}
+#section-5 li{
+	list-style-type:none;
+}
+#section-5 span{
+	height:auto;
+	float:left;
+	text-align:justify;
+	font-size:15px;
+    line-height:25px;
+}
+#section-5 div{
+	padding:70px 100px 0px 30px;
+}
+#t1{
+	width:40%;
+}
+#t1 p{
+	width:80%;
+}
+#t1 h4{
+	width:80%;
+}
+#t2{
+	width:20%;
+}
+#t3{
+	width:20%;
+}
+#t4{
+	width:20%;
+}
+#t4 form input::placeholder
+{
+	font-size:15px;
+	border-bottom:1px solid black;
+}
+#t4 form input{
+	font-size:15px;
+	background-color:white;
+}
+
+
+
+
+
+footer{
+	width:100%;
+	height:100px;
+	background-color:#7A9DA3;
+}
+footer div{
+	padding:40px 30px 20px 30px;	
+}
+#fp1{
+	font-family:GillSansMT;
+	font-size:15px;
+	color:white;
+	float:left;
+}
+#fp2{
+	font-family:GillSansMT;
+	font-size:15px;
+	color:white;
+	float:right;
+}
